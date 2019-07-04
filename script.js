@@ -14,7 +14,6 @@ $(".engSkillDesc").hide()
 
 
 
-
 // *****SCRIPT DU BOUTON DEVELOPPEMENT
 
 $("#devDispSkills").click(function () {
@@ -34,26 +33,6 @@ else if ( $( ".devSkillDesc" ).is(":hidden")) {
   }
 });
 
-
-// AVEC LA METHODE TOGGLE
-
-
-// $("#devDispSkills").click(function () {
-// if ( $( ".learnSkillDesc" ).is(":visible")){
-// $( ".learnSkillDesc" ).toggle("slow")
-// $(".devSkillDesc").toggle("slow");
-// }
-// else if ( $(".engSkillDesc" ).is(":visible")){
-// 	$( ".engSkillDesc" ).toggle("slow")
-// 	$(".devSkillDesc").toggle("slow"); 	
-//  }
-// else if ( $( ".devSkillDesc" ).is(":hidden")) {
-//     	$(".devSkillDesc").toggle("slow");
-//    }
-//      else   {
-//     	$( ".devSkillDesc" ).toggle("slow");
-//   }
-// });
 
 // *****SCRIPT DU BOUTON E-LEARNING
 
@@ -75,30 +54,6 @@ else
      	$( ".learnSkillDesc" ).hide();
    }
 });
-
-
-// AVEC LA METHODE TOGGLE
-
-// $("#learnDispSkills").click(function () {
-// if ( $( ".devSkillDesc" ).is(":visible")){ 	
-// 	$( ".devSkillDesc" ).toggle("slow")
-// 	$(".learnSkillDesc").toggle("slow");
-// }
-// else if ( $(".engSkillDesc" ).is(":visible")){
-// 	$( ".engSkillDesc" ).toggle("slow")
-// 	$(".learnSkillDesc").toggle("slow"); 	
-//  }
-// else if ( $(".learnSkillDesc" ).is(":hidden")) {
-//  	$(".learnSkillDesc").toggle("slow");
-//  }
-// else  
-// 	{
-//      	$( ".learnSkillDesc" ).toggle("slow");
-//    }
-// });
-
-
-
 
 
 // *****SCRIPT DU BOUTON ANGLAIS
@@ -123,25 +78,49 @@ else if ( $(".engSkillDesc" ).is(":hidden")) {
    }
 });
 
-// AVEC LA METHODE TOGGLE
 
-// $("#engDispSkills").click(function () {
-// if ( $( ".devSkillDesc" ).is(":visible")){ 	
-// 	$( ".devSkillDesc" ).toggle("slow")
-// 	$(".engSkillDesc").toggle("slow");
-// }
-// else if ( $(".learnSkillDesc" ).is(":visible")){
-// 	$( ".learnSkillDesc" ).toggle("slow")
-// 	$(".engSkillDesc").toggle("slow"); 	
-//  }
-// else if ( $(".engSkillDesc" ).is(":hidden")) {
-//  	$(".engSkillDesc").toggle("slow");
-//  	}
-//  	else 
-// 	{
-//      	$( ".engSkillDesc" ).toggle("slow");
-//    }
-// });
+// AFFICHAGE DES DONNEES DE CONTACT //
+
+// lES DONNEES DE CONTACT SON MASQUEES //
+
+$(".numTel").hide()
+$(".adrDesc").hide()
+$(".mailDesc").hide()
+$(".mapDesc").hide()
+
+// *****SCRIPT DU BOUTON Tel (Essayer de voir si c'est plus intéressant avec switch)
+
+
+$("#telDisp").click(function () {
+if ( $( ".adrDesc" ).is(":visible")){ 	
+	$( ".adrDesc" ).hide()
+	$(".numTel").slideDown("fast");
+}
+else if ( $(".adrDesc" ).is(":visible")){
+	$( ".adrDesc" ).hide()
+	$(".numTel").slideDown("fast"); 	
+ }
+else if ( $(".mailDesc" ).is(":visible")){
+	$( ".mailDesc" ).hide()
+	$(".numTel").slideDown("fast"); 	
+ }
+else if ( $(".mapDesc" ).is(":hidden")) {
+ 	$(".numTel").slideDown("fast");
+ 	}
+ 	else 
+	{
+     	$( ".numTel" ).hide();
+   }
+});
+
+
+
+
+// *****SCRIPT DU BOUTON Mail
+
+
+
+
 
 
 

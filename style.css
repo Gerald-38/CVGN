@@ -221,3 +221,17 @@ a:hover
                 border: 1px solid black;
 
             }
+
+.contactBlok h2
+{
+    
+}
+
+.numTel .adrDesc .mailDesc .mapDesc
+{
+    padding-top: 20px;
+/*    padding-bottom: 20px;*/
+    height: 80px;
+/*    border: 1px solid black;*/
+    background-color: rgb(255, 230, 255);
+}   
