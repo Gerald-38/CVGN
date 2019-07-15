@@ -92,19 +92,19 @@ $(".mapDesc").hide()
 
 
 $("#telDisp").click(function () {
-if ( $( ".adrDesc" ).is(":visible")){ 	
-	$( ".adrDesc" ).hide()
-	$(".numTel").slideDown("fast");
-}
-else if ( $(".adrDesc" ).is(":visible")){
-	$( ".adrDesc" ).hide()
-	$(".numTel").slideDown("fast"); 	
- }
-else if ( $(".mailDesc" ).is(":visible")){
+if ( $(".mailDesc" ).is(":visible")){
 	$( ".mailDesc" ).hide()
 	$(".numTel").slideDown("fast"); 	
  }
-else if ( $(".mapDesc" ).is(":hidden")) {
+else if ( $( ".adrDesc" ).is(":visible")){ 	
+	$( ".adrDesc" ).hide()
+	$(".numTel").slideDown("fast");
+}
+else if ( $(".mapDesc" ).is(":visible")){
+	$( ".mapDesc" ).hide()
+	$(".numTel").slideDown("fast"); 	
+ }
+else if ( $(".numTel" ).is(":hidden")) {
  	$(".numTel").slideDown("fast");
  	}
  	else 
@@ -119,7 +119,79 @@ else if ( $(".mapDesc" ).is(":hidden")) {
 // *****SCRIPT DU BOUTON Mail
 
 
+$("#mailDisp").click(function () {
+if ( $( ".numTel" ).is(":visible")){ 	
+	$( ".numTel" ).hide()
+	$(".mailDesc").slideDown("fast");
+}
+else if ( $(".adrDesc" ).is(":visible")){
+	$( ".adrDesc" ).hide()
+	$(".mailDesc").slideDown("fast"); 	
+ }
+else if ( $(".mapDesc" ).is(":visible")){
+	$( ".mapDesc" ).hide()
+	$(".mailDesc").slideDown("fast"); 	
+ }
+else if ( $(".mailDesc" ).is(":hidden")) {
+ 	$(".mailDesc").slideDown("fast");
+ 	}
+ 	else 
+	{
+     	$( ".mailDesc" ).hide();
+   }
+});
 
+
+// *****SCRIPT DU BOUTON Adresse
+
+
+$("#adrDisp").click(function () {
+if ( $( ".numTel" ).is(":visible")){ 	
+	$( ".numTel" ).hide()
+	$(".adrDesc").slideDown("fast");
+}
+else if ( $(".mailDesc" ).is(":visible")){
+	$( ".mailDesc" ).hide()
+	$(".adrDesc").slideDown("fast"); 	
+ }
+else if ( $(".mapDesc" ).is(":visible")){
+	$( ".mapDesc" ).hide()
+	$(".adrDesc").slideDown("fast"); 	
+ }
+else if ( $(".adrDesc" ).is(":hidden")) {
+ 	$(".adrDesc").slideDown("fast");
+ 	}
+ 	else 
+	{
+     	$( ".adrDesc" ).hide();
+   }
+});
+
+
+// *****SCRIPT DU BOUTON Localisation
+
+
+$("#showMap").click(function () {
+if ( $( ".numTel" ).is(":visible")){ 	
+	$( ".numTel" ).hide()
+	$(".mapDesc").slideDown("fast");
+}
+else if ( $(".mailDesc" ).is(":visible")){
+	$( ".mailDesc" ).hide()
+	$(".mapDesc").slideDown("fast"); 	
+ }
+else if ( $(".adrDesc" ).is(":visible")){
+	$( ".adrDesc" ).hide()
+	$(".mapDesc").slideDown("fast"); 	
+ }
+else if ( $(".mapDesc" ).is(":hidden")) {
+ 	$(".mapDesc").slideDown("fast");
+ 	}
+ 	else 
+	{
+     	$( ".mapDesc" ).hide();
+   }
+});
 
 
 
