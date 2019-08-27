@@ -19,14 +19,14 @@ $(".engSkillDesc").hide()
 $("#devDispSkills").click(function () {
 if ( $( ".learnSkillDesc" ).is(":visible")){
 $( ".learnSkillDesc" ).hide()
-$(".devSkillDesc").slideDown("fast");
+$(".devSkillDesc").slideDown("slow");
 }
 else if ( $(".engSkillDesc" ).is(":visible")){
 	$( ".engSkillDesc" ).hide()
-	$(".devSkillDesc").slideDown("fast"); 	
+	$(".devSkillDesc").slideDown("slow"); 	
  }
 else if ( $( ".devSkillDesc" ).is(":hidden")) {
-    	$(".devSkillDesc").slideDown("fast");
+    	$(".devSkillDesc").slideDown("slow");
    }
      else   {
     	$( ".devSkillDesc" ).hide();
@@ -40,14 +40,14 @@ else if ( $( ".devSkillDesc" ).is(":hidden")) {
 $("#learnDispSkills").click(function () {
 if ( $( ".devSkillDesc" ).is(":visible")){ 	
 	$( ".devSkillDesc" ).hide()
-	$(".learnSkillDesc").slideDown("fast");
+	$(".learnSkillDesc").slideDown("slow");
 }
 else if ( $(".engSkillDesc" ).is(":visible")){
 	$( ".engSkillDesc" ).hide()
-	$(".learnSkillDesc").slideDown("fast"); 	
+	$(".learnSkillDesc").slideDown("slow"); 	
  }
 else if ( $(".learnSkillDesc" ).is(":hidden")) {
- 	$(".learnSkillDesc").slideDown("fast");
+ 	$(".learnSkillDesc").slideDown("slow");
  }
 else  
 	{
@@ -56,21 +56,21 @@ else
 });
 
 
-// *****SCRIPT DU BOUTON ANGLAIS
+// *****SCRIPT DU BOUTON LANGUES
 
 
 
 $("#engDispSkills").click(function () {
 if ( $( ".devSkillDesc" ).is(":visible")){ 	
 	$( ".devSkillDesc" ).hide()
-	$(".engSkillDesc").slideDown("fast");
+	$(".engSkillDesc").slideDown("slow");
 }
 else if ( $(".learnSkillDesc" ).is(":visible")){
 	$( ".learnSkillDesc" ).hide()
-	$(".engSkillDesc").slideDown("fast"); 	
+	$(".engSkillDesc").slideDown("slow"); 	
  }
 else if ( $(".engSkillDesc" ).is(":hidden")) {
- 	$(".engSkillDesc").slideDown("fast");
+ 	$(".engSkillDesc").slideDown("slow");
  	}
  	else 
 	{
