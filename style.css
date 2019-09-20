@@ -1,3 +1,5 @@
+/* POLICES DE CARACTERE */
+
 @font-face {
     font-family: 'cantarellregular';
     src: url('fonts/Cantarell-Regular-webfont.eot');
@@ -36,6 +38,8 @@
 }
 
 
+/* PROPRIETES GLOBALES */
+
 body
 {
     background-image: url("images/desk.png");
@@ -43,67 +47,6 @@ body
     background-position: center;
     background-size: 100%;
     opacity: 0.8;
-}
-
-
-
-
-#navbar {
-width: 100%;
-height: 50px;
-position: absolute;
-z-index: 999;
-display: flex;
-background-color: rgb(102,102,102);
-/*background-color: rgb(77, 77, 51);*/
-opacity: 0.8;
-padding-left: 20%;
-padding-right: 20%;
-}
-
-
-
-#about, #skills, #career, #training, #other, #contactMe
-{
-    height:70%;
-    display: flex;
-    background-color: rgb(225, 225, 234);
-}
-
-
-
-.sectionContent h2
-{
-
-    color: black;  
-    margin-bottom: 0; 
-}
-
-.contentTitle
-{
-   width: 25%;
-   text-align: center;
-   margin-bottom: 10%;
-   margin-left: 15%;
-}
-
-.contentTitle img
-{
-    padding-top: 20px;    
-}
-
-
-.aPropos
-{
-    width:40%;
-}
-
-
-.sectionContent p
-{
-    color: black; 
-    margin-bottom: 0;
-    font-size: 1em;
 }
 
 h2
@@ -124,6 +67,33 @@ a
     text-decoration: none;
 }
 
+a:hover
+{
+    color:white;
+    text-decoration: none;
+}
+
+
+/* BARRE DE NAVIGATION */
+
+#navbar {
+width: 100%;
+height: 50px;
+position: absolute;
+z-index: 999;
+display: flex;
+background-color: rgb(102,102,102);
+/*background-color: rgb(77, 77, 51);*/
+opacity: 0.9;
+padding-left: 20%;
+padding-right: 20%;
+}
+
+header p:hover
+{
+    color: white;
+}
+
 #identity
 {
     padding-top: 1px;
@@ -142,48 +112,217 @@ a
     padding-right: 2px;
 }
 
+
+/* PROPRIETES COMMUNES A CHAQUE SECTION */
+
+#about, #skills, #career, #other, #contactMe
+{
+    width: 98%;
+    height:85%;
+    display: flex;
+    background-color: rgb(225, 225, 234);
+}
+
+.boldTitle
+{
+    font-weight: bold;
+}
+
+.sectionContent h2
+{
+
+    color: black;  
+    margin-bottom: 0; 
+}
+
+.contentTitle img
+{
+    padding-top: 20px;    
+}
+
+.sectionContent p
+{
+    color: black; 
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.miniPara
+{
+    font-size: 0.8em;
+}
+
+
+/* SECTION A PROPOS  */
+
+.aPropos
+{
+    width:40%;
+    margin-top: 10%;    
+
+}
+
+.contentTitle
+{
+   width: 25%;
+   text-align: center;
+   margin-top: 10%;
+   margin-left: 15%;
+}
+
+#about
+{
+    background-image: url(images/apropos.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+
+
+/* SECTION COMPETENCES */
+
+.competences
+{
+    margin-left: 10%;
+/*    margin-top: 5%;*/
+    width: 50%;
+/*    border: 1px solid black;*/
+}
+
+/*#funnyButtons
+{
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 100%;
+}*/
+
 #skills
 {
     background-color: rgb(225, 225, 234);
 }
 
-
-
-header p:hover
+#dispLogo
 {
-    color: white;
+/*    border: 1px solid black;*/
+    width: 30%;
+    margin-top: 5%;
+    margin-right: 100px;
 }
 
-a:hover
+.logoLine
 {
-    color:white;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
 }
 
-#essaiAnim
-{
-    background-color: red;
-    width:200px;
-    height: 200px;
-    position: absolute;
-}
-
-.devSkillDesc, .learnSkillDesc, .engSkillDesc
+.devSkillDesc, .learnSkillDesc, .engSkillDesc, .writeSkillDesc, .mngmtSkillDesc
 {
 
     background-color: rgb(204,204,255);
     border-radius: 10px;
     padding: 5px;
+    width: 80%;
 }
 
-    #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-                margin-top : 50 px;
-                height:200px;
-                width: 200px;
-                border: 1px solid black;
+#skills
+{
+    background-image: url(images/competences.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 
-            }
+/* SECTION EXPERIENCES   */
 
+#career
+{
+    border: 1px solid black;
+    background-image: url(images/experiences.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#expIT
+{
+    border: 1px solid blue;
+    width: 50%;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;     
+}
+
+#expPedago
+{
+    border: 1px solid green;
+    margin-top: 50px;
+
+}
+
+#expAdm
+{  
+    border: 1px solid red;
+    width: 60%;
+    margin-top: 10px;
+}
+
+
+
+/* SECTION FORMATION   */
+
+#training
+{
+    width: 98%;
+    height:85%;
+    background-color: rgb(225, 225, 234);
+    background-image: url(images/formation.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border: 1px solid rgb(225, 225, 234);
+}
+
+#trainDisp
+{
+    margin-left: 10%; 
+    margin-top: 5%;
+}
+
+
+/* SECTION CENTRES D'INTERET */
+
+#scLink
+{
+    color: rgb(255, 102, 0);
+     font-style: italic;
+}
+
+#scLink:hover
+{
+ color:white;
+ text-decoration: underline;
+}
+
+#other
+{
+    background-image: url(images/interets.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+
+/* SECTION CONTACT  */
+
+.contactBlock
+{
+    display: flex;
+}
+
+#coordBlock
+{
+    margin-top: 5%;
+    margin-left: 10%;   
+}
 
 .numTel .adrDesc .mailDesc .mapDesc
 {
@@ -192,19 +331,35 @@ a:hover
     background-color: rgb(255, 230, 255);
 }   
 
-#scLink
+.cLink
 {
-    color:black;
+    color: rgb(255, 102, 0);
 }
 
-#scLink
+#showMap
 {
-color: grey;
- font-style: italic;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 
-#scLink:hover
-{
- color:white;
- text-decoration: underline;
+#map
+{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+            margin-top : 50 px;
+            height:400px;
+            width: 400px;
+            border: 1px solid black;
 }
+
+#map
+{
+    width: 500px;
+    height: 500px;
+}
+
+#contactMe
+{
+    background-image: url(images/contact.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
