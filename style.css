@@ -1,4 +1,4 @@
-/* POLICES DE CARACTERE */
+/* **********POLICES DE CARACTERE********** */
 
 @font-face {
     font-family: 'cantarellregular';
@@ -38,7 +38,7 @@
 }
 
 
-/* PROPRIETES GLOBALES */
+/* **********PROPRIETES GLOBALES********** */
 
 body
 {
@@ -74,7 +74,7 @@ a:hover
 }
 
 
-/* BARRE DE NAVIGATION */
+/* **********BARRE DE NAVIGATION********** */
 
 #navbar {
 width: 100%;
@@ -113,7 +113,7 @@ header p:hover
 }
 
 
-/* PROPRIETES COMMUNES A CHAQUE SECTION */
+/* **********PROPRIETES COMMUNES A CHAQUE SECTION********** */
 
 #about, #skills, #career, #other, #contactMe
 {
@@ -149,26 +149,16 @@ header p:hover
 
 .miniPara
 {
+    font-size: 1em;
+}
+
+.italicPara
+{
     font-size: 0.8em;
+    font-style: italic;
 }
 
-
-/* SECTION A PROPOS  */
-
-.aPropos
-{
-    width:40%;
-    margin-top: 10%;    
-
-}
-
-.contentTitle
-{
-   width: 25%;
-   text-align: center;
-   margin-top: 10%;
-   margin-left: 15%;
-}
+/* **********SECTION A PROPOS**********  */
 
 #about
 {
@@ -177,9 +167,23 @@ header p:hover
     background-position: bottom right;
 }
 
+.contentTitle
+{
+   width: 25%;
+   text-align: center;
+   margin-top: 10%;
+   margin-left: 10%;
+}
+
+.aPropos
+{
+    width:40%;
+    margin-top: 10%;
+    margin-left: 2%;
+}
 
 
-/* SECTION COMPETENCES */
+/* **********SECTION COMPETENCES********** */
 
 .competences
 {
@@ -233,11 +237,11 @@ header p:hover
     background-position: bottom right;
 }
 
-/* SECTION EXPERIENCES   */
+
+/* **********SECTION EXPERIENCES**********   */
 
 #career
 {
-    border: 1px solid black;
     background-image: url(images/experiences.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -245,31 +249,43 @@ header p:hover
 
 #expIT
 {
-    border: 1px solid blue;
     width: 50%;
     height: 80%;
     margin-top: 25px;
     margin-left: 20px;
-    margin-right: 20px;     
+    margin-right: 5px;
+    background-color: rgb(204,204,255);
+    border-radius: 10px;
+    padding: 5px;     
 }
 
 #expPedago
 {
-    border: 1px solid green;
-    margin-top: 50px;
+    background-color: rgb(204,204,255);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 25px;
+    width:80%;
 
 }
 
 #expAdm
 {  
-    border: 1px solid red;
-    width: 60%;
-    margin-top: 10px;
+    background-color: rgb(204,204,255);
+    border-radius: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 51%;
+    margin-top: 5px;
+}
+
+.typeExp
+{
+    color: rgb(255, 102, 0);
 }
 
 
-
-/* SECTION FORMATION   */
+/* **********SECTION FORMATION**********   */
 
 #training
 {
@@ -289,18 +305,24 @@ header p:hover
 }
 
 
-/* SECTION CENTRES D'INTERET */
+/* ************SECTION CENTRES D'INTERET********** */
+
+#otherDisp
+{
+    margin-left: 10%; 
+    margin-top: 5%;    
+}
 
 #scLink
 {
     color: rgb(255, 102, 0);
-     font-style: italic;
+    font-style: italic;
 }
 
 #scLink:hover
 {
- color:white;
- text-decoration: underline;
+    color:white;
+    text-decoration: underline;
 }
 
 #other
@@ -311,7 +333,7 @@ header p:hover
 }
 
 
-/* SECTION CONTACT  */
+/* **********SECTION CONTACT**********  */
 
 .contactBlock
 {
@@ -339,7 +361,7 @@ header p:hover
 #showMap
 {
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 #map
@@ -358,6 +380,9 @@ header p:hover
 
 #contactMe
 {
+    background-image: url(images/greetings.png);
+    background-repeat: no-repeat;
+    background-position: right;
     background-image: url(images/contact.png);
     background-repeat: no-repeat;
     background-position: bottom right;

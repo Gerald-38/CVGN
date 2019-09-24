@@ -1,0 +1,111 @@
+<!-- ***************************** SECTION EXPERIENCES *************************** -->
+
+		<div class="section" class="impair" data-anchor="page3">
+			<h2>EXPERIENCES</h2>
+			<section id="career" class="sectionContent">
+				<br>
+				<div id="expIT">
+					<p><span class="boldTitle">1998 – 2004 : CONSULTANT EN CHARGE DE LA FORMATION / CO-FONDATEUR ASSOCIE (Digimind-Editieur de logiciels, conseil  Grenoble)</span></p>
+					<p>Missions : </p>
+					<div class="miniPara">
+						<ul>
+							<li>Développer une offre en conseil et formation</li>
+							<li>Réaliser l'ensemble du contenu pédagogique </li>
+							<li>Assurer les interventions auprès des clients</li>
+							<li>Etre à l'interface entre les clients et les équipes de développement</li>
+							<li>Développer des partenariats</li>
+						</ul>			
+					</div>
+					<p>Résultats / Réalisations : </p>
+					<div class="miniPara">
+						<ul>
+							<li>Offre complète de solutions en conseil et formation (canevas de projets, documents méthodologiques)</li>
+							<li>Conception et réalisation de l'ensemble des formations (utilisation des logiciels édités, recherche structurée d'informations sur Internet, méthodologie de veille stratégique)</li>
+							<li>Réalisation d'un module de formation pour un cours annuel auprès des étudiants de l'Institut Européen de la Qualité Totale (I.E.Q.T.)</li>
+							<li>Traduction intégrale et animation d'une formation en anglais</li>
+							<li>Rédactions des guides utilisateurs et de modules d'aide en ligne interactifs</li>
+							<li>Réalisation d'une formation à la veille concurrentielle sur Internet, et diffusion de cette formation dans le catalogue d'un organisme inter-entreprise (SERDA) </li>
+							<li>Animation de formations à la veille stratégique, en intra-entreprise, auprès de clients institutionnels ou du secteur privé (Exemples : TOTAL, EDF, Ministère des affaires étrangères, Conseil Général de La Manche)</li>
+							<li>Animation de formations à la veille stratégique en organisme inter-entreprise (Les Rencontres d'Affaires)</li>
+							<li>Réalisation d'interventions « sur mesure » auprès d'établissements d'enseignement supérieur (Université Louis Lumière - Lyon, Université du Mirail - Toulouse, H.E.C Genève....)</li>
+							<li>Mise en place de partenariats avec des établissements universitaires</li>
+						</ul>							
+					</div>
+				</div>
+				<div id="blockPedAdm">
+					<div id="expPedago">
+						<p><span class="boldTitle">2005 – Juin 2007 : PROFESSEUR A DOMICILE (Progress Systeme-Cours à domicile  Grenoble)</span></p>
+						<p>Missions : </p>
+						<div class="miniPara">
+							<ul>
+								<li>Assurer des cours particuliers et suivre la progression des élèves</li>
+							</ul>
+						</div>
+						<p>Résultats : </p>
+						<div class="miniPara">
+							<ul>
+								<li>Rédaction de supports pédagogiques</li>
+								<li>Suivi d’une trentaine d’élèves</li>
+							</ul>	
+						</div>				
+					</div>									
+					<div id="expAdm">
+						<p><span class="boldTitle">Juin 2007 – Oct 2018 : CHARGE DU RECRUTEMENT (Fasiladom-Cours à domicile  Grenoble)</span></p>
+						<p>Missions : </p> 
+						<div class="miniPara">
+							<ul>
+								<li>Elaborer les outils de recrutement et de suivi</li> 
+								<li>gérer les recrutements</li>
+								<li>Rédiger les différents supports, participer à l'amélioration du système d'information</li>
+							</ul>
+						</div>
+						<p>Résultats : </p>	 
+						<div class="miniPara"> 
+							<ul>
+								<li>Méthodologie de recrutement</li>
+								<li>Outils informatiques spécifiés : contact multi-candidats, gestion numérique des documents</li>
+								<li>Plus de 5000 candidats en CVthèque</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+
+CSS : 
+
+/* SECTION EXPERIENCES   */
+
+#career
+{
+    border: 1px solid black;
+    background-image: url(images/experiences.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#expIT
+{
+    border: 1px solid blue;
+    width: 50%;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;     
+}
+
+#expPedago
+{
+    border: 1px solid green;
+    margin-top: 50px;
+
+}
+
+#expAdm
+{  
+    border: 1px solid red;
+    width: 60%;
+    margin-top: 10px;
+}
