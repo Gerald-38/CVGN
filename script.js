@@ -14,8 +14,6 @@ $(".writeSkillDesc").hide()
 $(".mngmtSkillDesc").hide()
 
 
-
-
 // *****SCRIPT DU BOUTON DEVELOPPEMENT
 
 $("#devDispSkills").click(function () {
@@ -157,132 +155,268 @@ else if ( $(".mngmtSkillDesc" ).is(":hidden")) {
    }
 });
 
-// AFFICHAGE DES DONNEES DE CONTACT //
-
-// lES DONNEES DE CONTACT SON MASQUEES //
-
-// $(".numTel").hide()
-// $(".adrDesc").hide()
-// $(".mailDesc").hide()
-// $(".mapDesc").hide()
-
-// *****SCRIPT DU BOUTON Tel (Essayer de voir si c'est plus intéressant avec switch)
 
 
-// $("#telDisp").click(function () {
-// if ( $(".mailDesc" ).is(":visible")){
-// 	$( ".mailDesc" ).hide()
-// 	$(".numTel").slideDown("fast"); 	
-//  }
-// else if ( $( ".adrDesc" ).is(":visible")){ 	
-// 	$( ".adrDesc" ).hide()
-// 	$(".numTel").slideDown("fast");
-// }
-// else if ( $(".mapDesc" ).is(":visible")){
-// 	$( ".mapDesc" ).hide()
-// 	$(".numTel").slideDown("fast"); 	
-//  }
-// else if ( $(".numTel" ).is(":hidden")) {
-//  	$(".numTel").slideDown("fast");
-//  	}
-//  	else 
-// 	{
-//      	$( ".numTel" ).hide();
-//    }
-// });
+// ********** VERSION MOBILE ********** //
+
+// *****TOUTES LES COMPETENCES SONT MASQUEES SAUF DEVELOPPEMENT
+
+
+// $(".mobDevSkillDesc").hide()
+$(".mobLearnSkillDesc").hide()
+$(".mobEngSkillDesc").hide()
+$(".mobWriteSkillDesc").hide()
+$(".mobMngmtSkillDesc").hide()
+
+
+// *****SCRIPT DU MENU MOBILE
+
+$("#mobMenuDisp").hide()
+
+$("#mobMenuButton").click(function() {
+	if ($( "#mobMenuDisp" ).is(":visible")) {
+		$("#mobMenuDisp").hide();
+	} else {
+		$( "#mobMenuDisp").toggle();
+	}
+});
+
+$("#mobMenuDisp").click(function() {
+	$("#mobMenuDisp").hide();
+});
+
+$(".sectionContent").click(function() {
+	if ($( "#mobMenuDisp" ).is(":visible")) {
+	$("#mobMenuDisp").hide();
+	}
+});
+
+$("#identity").click(function() {
+	if ($( "#mobMenuDisp" ).is(":visible")) {
+	$("#mobMenuDisp").hide();
+	}
+});
+
+
+// *****SCRIPT DU BOUTON DEVELOPPEMENT
+
+$("#mobDevDispSkills").click(function () {
+if ( $( ".mobLearnSkillDesc" ).is(":visible")){
+$( ".mobLearnSkillDesc" ).hide()
+$(".mobDevSkillDesc").slideDown("slow");
+}
+else if ( $(".mobEngSkillDesc" ).is(":visible")){
+	$( ".mobEgSkillDesc" ).hide()
+	$(".mobDevSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobWriteSkillDesc" ).is(":visible")){
+	$( ".mobWriteSkillDesc" ).hide()
+	$(".mobDevSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobMngmtSkillDesc" ).is(":visible")){
+	$( ".mobMngmtSkillDesc" ).hide()
+	$(".mobDevSkillDesc").slideDown("slow"); 	
+ }
+else if ( $( ".mobDevSkillDesc" ).is(":hidden")) {
+    	$(".mobDevSkillDesc").slideDown("slow");
+   }
+     else   {
+    	$( ".mobDevSkillDesc" ).hide(300);
+  }
+});
+
+
+// *****SCRIPT DU BOUTON E-LEARNING
+
+$("#mobLearnDispSkills").click(function () {
+if ( $( ".mobDevSkillDesc" ).is(":visible")){ 	
+	$( ".mobDevSkillDesc" ).hide()
+	$(".mobLearnSkillDesc").slideDown("slow");
+}
+else if ( $(".mobEngSkillDesc" ).is(":visible")){
+	$( ".mobEngSkillDesc" ).hide()
+	$(".mobLearnSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobWriteSkillDesc" ).is(":visible")){
+	$( ".mobWriteSkillDesc" ).hide()
+	$(".mobLearnSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobMngmtSkillDesc" ).is(":visible")){
+	$( ".mobMngmtSkillDesc" ).hide()
+	$(".mobLearnSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobLearnSkillDesc" ).is(":hidden")) {
+ 	$(".mobLearnSkillDesc").slideDown("slow");
+ }
+else  
+	{
+     	$( ".mobLearnSkillDesc" ).hide(300);
+   }
+});
+
+
+// *****SCRIPT DU BOUTON LANGUES
+
+$("#mobEngDispSkills").click(function () {
+if ( $( ".mobDevSkillDesc" ).is(":visible")){ 	
+	$( ".mobDevSkillDesc" ).hide()
+	$(".mobEngSkillDesc").slideDown("slow");
+}
+else if ( $(".mobLearnSkillDesc" ).is(":visible")){
+	$( ".mobLearnSkillDesc" ).hide()
+	$(".mobEngSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobWriteSkillDesc" ).is(":visible")){
+	$( ".mobWriteSkillDesc" ).hide()
+	$(".mobEngSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobMngmtSkillDesc" ).is(":visible")){
+	$( ".mobMngmtSkillDesc" ).hide()
+	$(".mobEngSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobEngSkillDesc" ).is(":hidden")) {
+ 	$(".mobEngSkillDesc").slideDown("slow");
+ 	}
+ 	else 
+	{
+     	$( ".mobEngSkillDesc" ).hide(300);
+   }
+});
+
+// *****SCRIPT DU BOUTON REDACTION
+
+$("#mobWriteDispSkills").click(function () {
+if ( $( ".mobDevSkillDesc" ).is(":visible")){ 	
+	$( ".mobDevSkillDesc" ).hide()
+	$(".mobWriteSkillDesc").slideDown("slow");
+}
+else if ( $(".mobLearnSkillDesc" ).is(":visible")){
+	$( ".mobLearnSkillDesc" ).hide()
+	$(".mobWriteSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobEngSkillDesc" ).is(":visible")){
+	$( ".mobEngSkillDesc" ).hide()
+	$(".mobWriteSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobMngmtSkillDesc" ).is(":visible")){
+	$( ".mobMngmtSkillDesc" ).hide()
+	$(".mobWriteSkillDesc").slideDown("slow"); 	
+ }
+else if ( $(".mobWriteSkillDesc" ).is(":hidden")) {
+ 	$(".mobWriteSkillDesc").slideDown("slow");
+ 	}
+ 	else 
+	{
+     	$( ".mobWriteSkillDesc" ).hide(300);
+   }
+});
+
+// *****SCRIPT DU BOUTON MANAGEMENT
+
+$("#mobMngmtDispSkills").click(function () {
+if ( $( ".mobDevSkillDesc" ).is(":visible")){ 	
+	$( ".mobDevSkillDesc" ).hide()
+	$(".mobMngmtSkillDesc").slideDown();
+}
+else if ( $(".mobLearnSkillDesc" ).is(":visible")){
+	$( ".mobLearnSkillDesc" ).hide()
+	$(".mobMngmtSkillDesc").slideDown(); 	
+ }
+else if ( $(".mobEngSkillDesc" ).is(":visible")){
+	$( ".mobEngSkillDesc" ).hide()
+	$(".mobMngmtSkillDesc").slideDown(); 	
+ }
+else if ( $(".mobWriteSkillDesc" ).is(":visible")){
+	$( ".mobWriteSkillDesc" ).hide()
+	$(".mobMngmtSkillDesc").slideDown(); 	
+ }
+else if ( $(".mobMngmtSkillDesc" ).is(":hidden")) {
+ 	$(".mobMngmtSkillDesc").slideDown();
+ 	}
+ 	else 
+	{
+     	$( ".mobMngmtSkillDesc" ).hide();
+   }
+});
+
+
+// ***** AFFICHAGE DES EXPERIENCES VERSION MOBILE *****//
+
+// ***** Expérience IT *****
+
+$("#xpTitleITMob").click(function() {
+	
+	// if ($(".clicMob").is(":visible")) {
+	// 	$(".clicMob").hide();
+	// }
+	// else
+	// 	$(".clicMob").show();
+
+	if ($( "#paraXpPedago" ).is(":visible")) {
+		$("#paraXpPedago").hide();
+		$( "#paraXpIT").slideDown();
+	}
+	else if ($( "#paraXpAdm" ).is(":visible")) {
+		$("#paraXpAdm").hide();
+		$( "#paraXpIT").slideDown();
+	}
+	else if ($( "#paraXpIT" ).is(":hidden")) {
+		$( "#paraXpIT").slideDown();
+	}
+	else
+		$( "#paraXpIT").hide();
+});
 
 
 
-
-// *****SCRIPT DU BOUTON Mail
-
-
-// $("#mailDisp").click(function () {
-// if ( $( ".numTel" ).is(":visible")){ 	
-// 	$( ".numTel" ).hide()
-// 	$(".mailDesc").slideDown("fast");
-// }
-// else if ( $(".adrDesc" ).is(":visible")){
-// 	$( ".adrDesc" ).hide()
-// 	$(".mailDesc").slideDown("fast"); 	
-//  }
-// else if ( $(".mapDesc" ).is(":visible")){
-// 	$( ".mapDesc" ).hide()
-// 	$(".mailDesc").slideDown("fast"); 	
-//  }
-// else if ( $(".mailDesc" ).is(":hidden")) {
-//  	$(".mailDesc").slideDown("fast");
-//  	}
-//  	else 
-// 	{
-//      	$( ".mailDesc" ).hide();
-//    }
-// });
+// ***** Expérience Pedago ***** 
 
 
-// *****SCRIPT DU BOUTON Adresse
+$("#xpTitlePedagoMob").click(function() {
+
+	// if ($(".clicMob").is(":hidden")) {
+	// 	$(".clicMob").show();
+	// }
+
+	if ($( "#paraXpIT" ).is(":visible")) {
+		$("#paraXpIT").hide();
+		$( "#paraXpPedago").slideDown();
+	}
+	else if ($( "#paraXpAdm" ).is(":visible")) {
+		$("#paraXpAdm").hide();
+		$( "#paraXpPedago").slideDown();
+	}
+	else if ($( "#paraXpPedago" ).is(":hidden")) {
+		$( "#paraXpPedago").slideDown();
+	}
+	else
+		$( "#paraXpPedago").hide();
+});
 
 
-// $("#adrDisp").click(function () {
-// if ( $( ".numTel" ).is(":visible")){ 	
-// 	$( ".numTel" ).hide()
-// 	$(".adrDesc").slideDown("fast");
-// }
-// else if ( $(".mailDesc" ).is(":visible")){
-// 	$( ".mailDesc" ).hide()
-// 	$(".adrDesc").slideDown("fast"); 	
-//  }
-// else if ( $(".mapDesc" ).is(":visible")){
-// 	$( ".mapDesc" ).hide()
-// 	$(".adrDesc").slideDown("fast"); 	
-//  }
-// else if ( $(".adrDesc" ).is(":hidden")) {
-//  	$(".adrDesc").slideDown("fast");
-//  	}
-//  	else 
-// 	{
-//      	$( ".adrDesc" ).hide();
-//    }
-// });
+// ***** Expérience Adm *****
 
 
-// *****SCRIPT DU BOUTON Localisation
+$("#xpTitleAdmMob").click(function() {
 
+	// if ($(".clicMob").is(":hidden")) {
+	// 	$(".clicMob").show();
+	// }
 
-// $("#showMap").click(function () {
-// if ( $( ".numTel" ).is(":visible")){ 	
-// 	$( ".numTel" ).hide()
-// 	$(".mapDesc").slideDown("fast");
-// }
-// else if ( $(".mailDesc" ).is(":visible")){
-// 	$( ".mailDesc" ).hide()
-// 	$(".mapDesc").slideDown("fast"); 	
-//  }
-// else if ( $(".adrDesc" ).is(":visible")){
-// 	$( ".adrDesc" ).hide()
-// 	$(".mapDesc").slideDown("fast"); 	
-//  }
-// else if ( $(".mapDesc" ).is(":hidden")) {
-//  	$(".mapDesc").slideDown("fast");
-//  	}
-//  	else 
-// 	{
-//      	$( ".mapDesc" ).hide();
-//    }
-// });
-
-
-
-
-// // ANIMATION ET AGRANDISSEMENT D'UNE DIV
-
-// $('button').on('click',function() {
-// 	$('#essaiAnim').animate({
-// 				left: '700px',
-// 				width: '+=200px',
-// 				height: '+=200px' },2000);
-
-// });
+	if ($( "#paraXpIT" ).is(":visible")) {
+		$("#paraXpIT").hide();
+		$( "#paraXpAdm").slideDown();
+	}
+	else if ($( "#paraXpPedago" ).is(":visible")) {
+		$("#paraXpPedago").hide();
+		$( "#paraXpAdm").slideDown();
+	}
+	else if ($( "#paraXpAdm" ).is(":hidden")) {
+		$( "#paraXpAdm").slideDown();
+	}
+	else
+		$( "#paraXpAdm").hide();
+});
 
 
 // UTILISATION DE L'API OPENSTREETMAP 
@@ -293,7 +427,7 @@ else if ( $(".mngmtSkillDesc" ).is(":hidden")) {
 	// Fonction d'initialisation de la carte
 	function initMap() {
 		// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-        macarte = L.map('map').setView([lat, lon], 11);
+        macarte = L.map('map').setView([lat, lon], 10);
         // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
         L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
             // lien vers la source des données
@@ -308,18 +442,4 @@ else if ( $(".mngmtSkillDesc" ).is(":hidden")) {
 		initMap(); 
 
 	}
-
-// var dispMat = document.getElementById('showMap');
-
-// dispMat.onclick = initMap;
-
 });
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,412 @@
+/* **********PROPRIETES GLOBALES********** */
+
+body
+{
+    background-image: url("images/deskmob.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    opacity: 0.8;
+}
+
+h2
+{
+    color:black;
+    font-size:1.1em;
+}
+
+p
+{
+    color: black;
+    font-size: 0.8em;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+/* **********BARRE DE NAVIGATION********** */
+
+#navbar 
+{
+    display: flex;
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    z-index: 999;
+    background-color: rgb(102,102,102);
+    opacity: 0.9;
+    justify-content: space-between;
+
+}
+
+#identity
+{
+    padding-top: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+#identity h2
+{
+    color: white;
+}
+
+.menuItem
+{
+    display: none;
+}
+
+#mobMenu
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#mobMenuButton
+{
+   /* height: 50px;*/
+   /* width: 120px;*/
+}
+
+#mobMenuButton img
+{
+    float: right;
+    opacity: 0.3;
+}
+
+#mobMenuDisp
+{
+    background-color: rgb(6,69,124);
+/*    padding: auto;*/
+    border: 1px solid grey;
+    vertical-align: center;
+    padding: 0;
+}
+
+#mobMenuDisp a
+{
+    color: white;
+    vertical-align: middle;
+
+}
+
+#mobMenuDisp p
+{
+    text-align: center;
+/*    padding: 0;
+    margin: 0;
+    text-align: center;*/
+}
+
+.mobMenuItem
+{
+    
+    border-bottom: 1px solid grey;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    width: 100px;
+}
+
+.mobMenuItemLast
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* **********PROPRIETES COMMUNES A CHAQUE SECTION********** */
+
+.section
+{
+    width: auto;
+}
+
+.xpTitle
+{
+    display: none;
+}
+
+.xpTitleMob
+{
+    background-color: rgb(204,204,255);
+    border-radius: 10px;
+    padding: 5px;
+    width: auto;
+}
+
+#about, #skills, #career, #other, #contactMe
+{
+    width: 90%;
+    height:90%;
+    padding: 0;
+    background-color: rgb(225, 225, 234);
+}
+
+@media (min-width: 420px) and (max-width: 810px)
+{
+    #about, #skills, #career, #other, #contactMe
+        {
+        width: 95%;
+        height:90%;
+        padding: 0;
+        background-color: rgb(225, 225, 234);
+        }
+}
+
+.boldTitle
+{
+    font-weight: bold;
+}
+
+.miniPara
+{
+    font-size: 0.8em;
+}
+
+
+/* **********SECTION A PROPOS**********  */
+
+.aPropos h2
+{
+    text-align: center;
+}
+
+#about
+{
+    background-image: url(images/aproposMob.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.contentTitle
+{
+   width: 100%;
+   text-align: center;
+}
+
+.mobBr
+{
+    display: none;
+}
+
+
+/* **********SECTION COMPETENCES**********  */
+
+#skills
+{
+    background-image: url(images/competencesMob.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.competences
+{
+    display: none;
+}
+
+#dispLogo
+{
+    display: none;
+}
+
+.miniCompetences
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobDevSkillDesc, .mobLearnSkillDesc, .mobEngSkillDesc, .mobWriteSkillDesc, .mobMngmtSkillDesc
+{
+
+    background-color: rgb(204,204,255);
+    border-radius: 10px;
+    padding: 5px;
+    width: auto;
+}
+
+
+/* **********SECTION EXPERIENCES**********   */
+
+#career
+{
+    background-image: url(images/experiencesMob.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+ul {
+    list-style:square;
+    margin-left:12px;
+    padding-left:0;
+}
+
+.typeExp
+{
+    color: rgb(255, 102, 0);
+}
+
+.mobHide
+{
+    display: none;
+}
+
+#dispMissionsIT, #dispMissionsPedago, #dispMissionsAdm
+{
+    cursor: pointer;
+}
+
+#dispResultsIT, #dispResultsPedago, #dispResultsAdm
+{
+    cursor: pointer;
+}
+
+#paraXpIT
+{
+    display: none;
+}
+
+#paraXpPedago
+{
+    display: none;
+}
+
+#paraXpAdm
+{
+    display: none;
+}
+
+.clicMob
+{
+    color: red;
+    font-style: italic;
+}
+
+
+/* **********SECTION FORMATION**********   */
+
+#training
+{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(225, 225, 234);
+    border: 1px solid rgb(225, 225, 234);
+    background-image: url(images/formationMob.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+@media (min-width: 400px) and (max-width: 780px)
+{
+    #training
+    {
+        width: 95%;
+        height: 90%;
+        background-color: rgb(225, 225, 234);
+        border: 1px solid rgb(225, 225, 234);
+    }
+}
+
+#trainDisp
+{
+    margin-left: 1%; 
+    margin-top: 1%;
+}
+
+
+/* ************SECTION CENTRES D'INTERET********** */
+
+#other
+{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*#otherDisp
+{
+    margin-left: 10%; 
+    margin-top: 5%;    
+}*/
+
+#scLink
+{
+    color: rgb(255, 102, 0);
+    font-style: italic;
+}
+
+#scLink:hover
+{
+    color:white;
+    text-decoration: underline;
+}
+
+#other
+{
+    background-image: url(images/interetsMob.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#titresSC
+{
+    display: none;
+}
+
+#track1
+{
+    display: none;
+}
+
+#track2
+{
+    display: none;
+}
+
+
+/* **********SECTION CONTACT**********  */
+
+#contactMe
+{
+    background-image: url(images/contactMob.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-top: 1%;
+    padding-left: 1%;
+
+}
+
+.contactBlock
+{
+    display: flex;
+}
+
+.numTel .adrDesc .mailDesc .mapDesc
+{
+    padding-top: 10px;
+    height: 80px;
+    background-color: rgb(255, 230, 255);
+}   
+
+.cLink
+{
+    color: rgb(255, 102, 0);
+}
+
+#showMap
+{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#map
+{
+    margin-top : 50 px;
+    height:220px;
+    width: 220px;
+}

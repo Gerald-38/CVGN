@@ -22,10 +22,10 @@ html.fp-enabled,
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
-    margin:20px;
+    margin: 20px;
 }
 .fp-slide {
-    float: left;
+   float: left;
 }
 .fp-slide, .fp-slidesContainer {
     height: 100%;

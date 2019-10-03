@@ -83,13 +83,12 @@ position: absolute;
 z-index: 999;
 display: flex;
 background-color: rgb(102,102,102);
-/*background-color: rgb(77, 77, 51);*/
 opacity: 0.9;
 padding-left: 20%;
 padding-right: 20%;
 }
 
-header p:hover
+p:hover
 {
     color: white;
 }
@@ -101,6 +100,11 @@ header p:hover
     font-size: 1.5em;
 }
 
+.menuItemList
+{
+    padding-top: 1%;
+    display: flex;
+}
 .menuItem
 {
     padding-top: 1%;
@@ -111,6 +115,16 @@ header p:hover
     padding-left: 2px; 
     padding-right: 2px;
 }
+
+#mobMenu
+{
+    display: none;
+}
+
+.menu-btn
+{
+    display: none;
+}    
 
 
 /* **********PROPRIETES COMMUNES A CHAQUE SECTION********** */
@@ -193,12 +207,12 @@ header p:hover
 /*    border: 1px solid black;*/
 }
 
-/*#funnyButtons
+#funnyButtons
 {
-    margin-left: 20%;
+    /*margin-left: 20%;
     margin-top: 5%;
-    width: 100%;
-}*/
+    width: 100%;*/
+}
 
 #skills
 {
@@ -207,7 +221,6 @@ header p:hover
 
 #dispLogo
 {
-/*    border: 1px solid black;*/
     width: 30%;
     margin-top: 5%;
     margin-right: 100px;
@@ -218,7 +231,6 @@ header p:hover
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-
 }
 
 .devSkillDesc, .learnSkillDesc, .engSkillDesc, .writeSkillDesc, .mngmtSkillDesc
@@ -235,6 +247,11 @@ header p:hover
     background-image: url(images/competences.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+
+.miniCompetences
+{
+    display: none;
 }
 
 
@@ -275,13 +292,23 @@ header p:hover
     border-radius: 10px;
     padding: 5px;
     width: 80%;
-    height: 51%;
-    margin-top: 5px;
+    height: 40%;
+    margin-top: 100px;
 }
 
 .typeExp
 {
     color: rgb(255, 102, 0);
+}
+
+.xpTitleMob
+{
+    display: none;
+}
+
+.clicMob
+{
+    display: none;
 }
 
 
@@ -361,21 +388,15 @@ header p:hover
 #showMap
 {
     margin-top: 5%;
-    margin-left: 10%;
-}
-
-#map
-{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-            margin-top : 50 px;
-            height:400px;
-            width: 400px;
-            border: 1px solid black;
+    margin-left: 9%;
 }
 
 #map
 {
-    width: 500px;
-    height: 500px;
+    margin-top : 50 px;
+    height:500px;
+    width:500px;
+    border: 1px solid black;
 }
 
 #contactMe
@@ -387,4 +408,3 @@ header p:hover
     background-repeat: no-repeat;
     background-position: bottom right;
 }
-
