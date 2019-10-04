@@ -147,7 +147,7 @@ a:hover
     background-color: rgb(225, 225, 234);
 }
 
-@media (min-width: 420px) and (max-width: 810px)
+@media (min-width: 420px) and (max-width: 1425px)
 {
     #about, #skills, #career, #other, #contactMe
         {
@@ -243,7 +243,7 @@ a:hover
 
 ul {
     list-style:square;
-    margin-left:12px;
+    margin-left:15px;
     padding-left:0;
 }
 
@@ -302,7 +302,7 @@ ul {
     background-position: bottom right;
 }
 
-@media (min-width: 400px) and (max-width: 780px)
+@media (min-width: 400px) and (max-width: 1425px)
 {
     #training
     {
@@ -358,11 +358,6 @@ ul {
     display: none;
 }
 
-#track1
-{
-    display: none;
-}
-
 #track2
 {
     display: none;
@@ -401,7 +396,7 @@ ul {
 #showMap
 {
     margin-top: 10%;
-    margin-left: 10%;
+    padding-left: 1%;
 }
 
 #map
@@ -409,4 +404,13 @@ ul {
     margin-top : 50 px;
     height:220px;
     width: 220px;
+}
+
+@media (min-width: 400px) and (max-width: 1425px)
+{
+    #map
+    {
+        height:400px;
+        width: 400px;
+    }
 }
