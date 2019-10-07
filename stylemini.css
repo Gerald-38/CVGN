@@ -282,6 +282,21 @@ ul {
     display: none;
 }
 
+#paraXpITMob
+{
+    display: none;
+}
+
+#paraXpPedagoMob
+{
+    display: none;
+}
+
+#paraXpAdmMob
+{
+    display: none;
+}
+
 .clicMob
 {
     color: red;

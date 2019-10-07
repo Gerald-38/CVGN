@@ -206,7 +206,7 @@ $( ".mobLearnSkillDesc" ).hide()
 $(".mobDevSkillDesc").slideDown("slow");
 }
 else if ( $(".mobEngSkillDesc" ).is(":visible")){
-	$( ".mobEgSkillDesc" ).hide()
+	$( ".mobEngSkillDesc" ).hide()
 	$(".mobDevSkillDesc").slideDown("slow"); 	
  }
 else if ( $(".mobWriteSkillDesc" ).is(":visible")){
@@ -352,19 +352,19 @@ $("#xpTitleITMob").click(function() {
 	// else
 	// 	$(".clicMob").show();
 
-	if ($( "#paraXpPedago" ).is(":visible")) {
-		$("#paraXpPedago").hide();
-		$( "#paraXpIT").slideDown();
+	if ($( ".paraXpPedagoMob" ).is(":visible")) {
+		$(".paraXpPedagoMob").hide();
+		$( ".paraXpITMob").slideDown();
 	}
-	else if ($( "#paraXpAdm" ).is(":visible")) {
-		$("#paraXpAdm").hide();
-		$( "#paraXpIT").slideDown();
+	else if ($( ".paraXpAdmMob" ).is(":visible")) {
+		$(".paraXpAdmMob").hide();
+		$( ".paraXpITMob").slideDown();
 	}
-	else if ($( "#paraXpIT" ).is(":hidden")) {
-		$( "#paraXpIT").slideDown();
+	else if ($( ".paraXpITMob" ).is(":hidden")) {
+		$( ".paraXpITMob").slideDown();
 	}
 	else
-		$( "#paraXpIT").hide();
+		$( ".paraXpITMob").hide();
 });
 
 
@@ -378,19 +378,19 @@ $("#xpTitlePedagoMob").click(function() {
 	// 	$(".clicMob").show();
 	// }
 
-	if ($( "#paraXpIT" ).is(":visible")) {
-		$("#paraXpIT").hide();
-		$( "#paraXpPedago").slideDown();
+	if ($( ".paraXpITMob" ).is(":visible")) {
+		$(".paraXpITMob").hide();
+		$( ".paraXpPedagoMob").slideDown();
 	}
-	else if ($( "#paraXpAdm" ).is(":visible")) {
-		$("#paraXpAdm").hide();
-		$( "#paraXpPedago").slideDown();
+	else if ($( ".paraXpAdmMob" ).is(":visible")) {
+		$(".paraXpAdmMob").hide();
+		$( ".paraXpPedagoMob").slideDown();
 	}
-	else if ($( "#paraXpPedago" ).is(":hidden")) {
-		$( "#paraXpPedago").slideDown();
+	else if ($( ".paraXpPedagoMob" ).is(":hidden")) {
+		$( ".paraXpPedagoMob").slideDown();
 	}
 	else
-		$( "#paraXpPedago").hide();
+		$( ".paraXpPedagoMob").hide();
 });
 
 
@@ -403,19 +403,19 @@ $("#xpTitleAdmMob").click(function() {
 	// 	$(".clicMob").show();
 	// }
 
-	if ($( "#paraXpIT" ).is(":visible")) {
-		$("#paraXpIT").hide();
-		$( "#paraXpAdm").slideDown();
+	if ($( ".paraXpITMob" ).is(":visible")) {
+		$(".paraXpITMob").hide();
+		$( ".paraXpAdmMob").slideDown();
 	}
-	else if ($( "#paraXpPedago" ).is(":visible")) {
-		$("#paraXpPedago").hide();
-		$( "#paraXpAdm").slideDown();
+	else if ($( ".paraXpPedagoMob" ).is(":visible")) {
+		$(".paraXpPedagoMob").hide();
+		$( ".paraXpAdmMob").slideDown();
 	}
-	else if ($( "#paraXpAdm" ).is(":hidden")) {
-		$( "#paraXpAdm").slideDown();
+	else if ($( ".paraXpAdmMob" ).is(":hidden")) {
+		$( ".paraXpAdmMob").slideDown();
 	}
 	else
-		$( "#paraXpAdm").hide();
+		$( ".paraXpAdmMob").hide();
 });
 
 
