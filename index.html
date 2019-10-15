@@ -2,14 +2,15 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-		<title>Gerald NAVARETTE</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" media="screen and (min-width: 1425px)" href="style.css">		        
-        <link rel="stylesheet" media="screen and (max-width: 1425px)" href="stylemini.css" /> 
-		<!-- <script src="jquery-3.4.1.js"></script> -->
-		<link rel="stylesheet" type="text/css" href="bootstrapDark.css">
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
-		<link rel="stylesheet" href="fullpage.css">
+	<title>Gerald NAVARETTE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" media="screen and (min-width: 1281px)" href="style.css">		        
+    <link rel="stylesheet" media="screen and (max-width: 1281px)" href="stylemini.css" /> 
+	<!-- <script src="jquery-3.4.1.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="bootstrapDark.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+	<link rel="stylesheet" href="fullpage.css">
 
 <!-- 		<script src="https://kit.fontawesome.com/554a16ee83.js"></script> -->
 
@@ -34,14 +35,26 @@
 			<div class=menuItem id="contactTitle"><p><a href="#page6">CONTACT</a></p></div>
 		</div>
 		<div id="mobMenu">
-			<div id="mobMenuButton"><img src="images/mobmenu.png" ></div>			
+			<div id="mobMenuButton"><img src="images/mobmenu.png" alt="" ></div>			
 			<div id="mobMenuDisp">
-				<p class="mobMenuItem"><a href="#page1">A PROPOS</a></p>
-				<p class="mobMenuItem"><a href="#page2">COMPETENCES</a></p>
-				<p class="mobMenuItem"><a href="#page3">EXPERIENCES</a></p>
-				<p class="mobMenuItem"><a href="#page4">FORMATION</a></p>
-				<p class="mobMenuItem"><a href="#page5">INTERETS</a></p>
-				<p class="mobMenuItem"><a href="#page6">CONTACT</a></p>	
+				<div class="mobMenuItem" onclick="document.location='#page1'">
+					<p><a href="#page1">A PROPOS</a></p>
+				</div>
+				<div class="mobMenuItem" onclick="document.location='#page2'">
+					<p><a href="#page2">COMPETENCES</a></p>
+				</div>
+				<div class="mobMenuItem" onclick="document.location='#page3'">
+					<p><a href="#page3">EXPERIENCES</a></p>
+				</div>
+				<div class="mobMenuItem" onclick="document.location='#page4'">
+					<p><a href="#page4">FORMATION</a></p>
+				</div>
+				<div class="mobMenuItem" onclick="document.location='#page5'">
+					<p><a href="#page5">INTERETS</a></p>
+				</div>
+				<div class="mobMenuItem" onclick="document.location='#page6'">
+					<p><a href="#page6">CONTACT</a></p>	
+				</div>
 			</div>		
 		</div>
 	</div>
@@ -52,12 +65,12 @@
 
 	<!-- ***************************** SECTION A PROPOS *************************** -->
 		
-		<div class="section" class="impair" data-anchor="page1">
+		<div class="section" data-anchor="page1">
 <!-- 			<h2>A PROPOS</h2> -->
 			<section id="about" class="sectionContent">
 				<div class="contentTitle">
 					<h2 >INGENIEUR DEVELOPPEMENT</h2>					
-					<img src="images/portrait_round.png">
+					<img src="images/portrait_round.png" alt="">
 				</div>				
 				<div class="aPropos">
 					<h2>Quelques mots sur mon profil</h2>
@@ -108,7 +121,7 @@
 						Java Script - jQuery - Ajax
 						<br>
 						<br>
-						Angular Node JS, Mongo DB (notions de base)
+						Angular (Création d'applications de base)
 						<br>
 						<br>
 						PHP – MySQL (avec un serveur Apache Tomcat)
@@ -160,96 +173,78 @@
 				</div>
 				<div id="dispLogo">
 					<div class="logoLine">
-						<p><img src="images/HTML5.png"></p>
-						<p><img src="images/CSS3.png"></p>
-						<p><img src="images/bootstrap.png"></p>
+						<p><img src="images/HTML5.png" alt=""></p>
+						<p><img src="images/CSS3.png" alt=""></p>
+						<p><img src="images/bootstrap.png" alt=""></p>
 					</div>
 					<div class="logoLine">
-						<p><img src="images/js.png"></p>
-						<p><img src="images/jquery.png"></p>
-						<p><img src="images/PHP.png"></p>
+						<p><img src="images/js.png" alt=""></p>
+						<p><img src="images/jquery.png" alt=""></p>
+						<p><img src="images/PHP.png" alt=""></p>
 					</div>
 					<div class="logoLine">
-						<p><img src="images/MySQL.png"></p>							
-						<p><img src="images/nodejs.png"></p>
-						<p><img src="images/angular.png"></p>
+						<p><img src="images/MySQL.png" alt=""></p>							
+						<p><img src="images/nodejs.png" alt=""></p>
+						<p><img src="images/angular.png" alt=""></p>
 					</div>
 					<div class="logoLine">
-						<p><img src="images/Java.png"></p>							
-						<p><img src="images/Git.png"></p>
-						<p><img src="images/eclipse.png"></p>
+						<p><img src="images/Java.png" alt=""></p>							
+						<p><img src="images/Git.png" alt=""></p>
+						<p><img src="images/eclipse.png" alt=""></p>
 					</div>						
 				</div>
 				
 				<!-- ********** VERSION MOBILE ********** -->
 				<div class="miniCompetences">
-					<br>
-					<br>
-					<button type="button" class="btn btn-outline-success" id="mobDevDispSkills">Développement</button><br>
+					<button type="button" class="btn btn-outline-success" id="mobDevDispSkills">Développement</button>
 					<p class=mobDevSkillDesc>
 						Algorithmique, Modélisation des données et des traitements (Merise)
-						<br> 
 						<br>
 						Agility : Initiation à la méthodologie SCRUM
 						<br>
-						<br>
 						HTML5 et CCS3
-						<br>
 						<br>
 						Bootstrap
 						<br>
-						<br>
 						Java Script - jQuery - Ajax
 						<br>
-						<br>
-						Angular Node JS, Mongo DB (notions de base)
-						<br>
+						Angular (Création d'applications de base)
 						<br>
 						PHP – MySQL (avec un serveur Apache Tomcat)
 						<br>
-						<br>
 						JAVA – JEE (Bases en POO, Codage de classes, Interactions Servlett - bean - jsp)
-						<br>
 						<br>
 						GIT
 					</p>
-					<button type="button" class="btn btn-outline-info" id="mobLearnDispSkills">e-Learning</button><br>				
+					<button type="button" class="btn btn-outline-info" id="mobLearnDispSkills">e-Learning</button><!-- <br> -->				
 					<p class=mobLearnSkillDesc>
 						Analyser la demande et les besoins
 						<br>
-						<br>
 						Définir les objectifs pédagogiques
-						<br>
 						<br>
 						Rédiger un contenu pédagogique
 						<br>
-						<br>
 						Realiser un module e-learning à l'aide de l'outil Storyline
 						<br> 
-						<br>
 						Animer une formation.
 					</p>
-					<button type="button" class="btn btn-outline-danger" id="mobEngDispSkills">Langues</button><br>
+					<button type="button" class="btn btn-outline-danger" id="mobEngDispSkills">Langues</button><!-- <br> -->
 					<p class=mobEngSkillDesc>
 						Anglais : Utilisation professionnelle (traduction de documents, interventions bilingues)
 						<br>
-						<br>
 						Allemand : Niveau basique
 					</p>
-					<button type="button" class="btn btn-outline-secondary" id="mobWriteDispSkills">Rédaction</button><br>
+					<button type="button" class="btn btn-outline-secondary" id="mobWriteDispSkills">Rédaction</button><!-- <br> -->
 					<p class=mobWriteSkillDesc>
 						Rédiger une documentation d'aide à l'utilisation de logiciels (format word, web, PDF)
 						<br>
-						<br>
 						Rédiger des procédures
-						<br>
 						<br>
 						Rédiger des articles
 					</p>
-					<button type="button" class="btn btn-outline-warning" id="mobMngmtDispSkills">Management</button><br>
+					<button type="button" class="btn btn-outline-warning" id="mobMngmtDispSkills">Management</button><!-- <br> -->
 					<p class=mobMngmtSkillDesc>
 						Manager une équipe de stagiaires ou saisonniers
-						<br>
 						<br>
 						Réaliser un reporting d'activité
 					</p>
@@ -260,45 +255,45 @@
 		
 	<!-- ***************************** SECTION EXPERIENCES *************************** -->
 
-		<div class="section" class="impair" data-anchor="page3">
+		<div class="section" data-anchor="page3">
 <!-- 			<h2>EXPERIENCES</h2> -->
 			<section id="career" class="sectionContent">
 				<div id="expIT">
 					<p class="xpTitle" id="xpTitleIT"><span class="boldTitle"><span class="typeExp">IT - CONSULTING :</span> CONSULTANT EN CHARGE DE LA FORMATION / CO-FONDATEUR ASSOCIE <br> (Digimind-Editieur de logiciels, conseil  Grenoble / 1998-2004)</span></p>
-					<p class="xpTitleMob" id="xpTitleITMob"><span class="boldTitle"><span class="typeExp">IT - CONSULTING :</span> CONSULTANT EN CHARGE DE LA FORMATION / CO-FONDATEUR ASSOCIE <br> (Digimind-Editieur de logiciels, conseil  Grenoble / 1998-2004)</span><span class="clicMob"> (Cliquez pour détailler)</span></p> <!-- VERSION MOBILE -->
+					<p class="xpTitleMob" id="xpTitleITMob"><span class="boldTitle"><span class="typeExp">IT - CONSULTING :</span> CONSULTANT EN CHARGE DE LA FORMATION / CO-FONDATEUR ASSOCIE <br> (Digimind-Editieur de logiciels, conseil  Grenoble / 1998-2004)</span><span class="clicMob"> (Cliquez pour détailler ou masquer)</span></p> <!-- VERSION MOBILE -->
 					<div id="paraXpIT" class="paraXpITMob">
 						<p class="missions">Missions : </p>
 						<ul class="miniPara">
-							<li>Développer une offre en conseil et formation</li>
-							<li>Réaliser l'ensemble du contenu pédagogique </li>
-							<li>Assurer les interventions auprès des clients</li>
-							<li class="mobHide">Etre à l'interface entre les clients et les équipes de développement</li>
-							<li>Développer des partenariats</li>
-						</ul>
-						<p class="resultats">Résultats / Réalisations : </p>
-						<ul class="miniPara">
-							<li>Offre complète de solutions en conseil et formation (canevas de projets, documents méthodologiques)</li>
-							<li>Conception et réalisation de l'ensemble des formations <span class="mobHide">(utilisation des logiciels édités, recherche structurée d'informations sur Internet, méthodologie de veille stratégique)</span></li>
-							<li class="mobHide">Réalisation d'un module de formation pour un cours annuel auprès des étudiants de l'Institut Européen de la Qualité Totale (I.E.Q.T.)</li>
-							<li>Traduction et animation d'une formation en anglais</li>
-							<li>Rédactions des guides utilisateurs et de modules d'aide en ligne interactifs</li>
-							<li>Réalisation d'une formation <span class="mobHide">à la veille concurrentielle sur Internet, et diffusion de cette formation dans le catalogue d'un organisme</span> inter-entreprise <span>(SERDA)</span> </li>
-							<li>Animation de formations <span class="mobHide"> à la veille stratégique,</span>en intra-entreprise <span class="mobHide">, auprès de clients institutionnels ou du secteur privé (Exemples : TOTAL, EDF, Ministère des affaires étrangères, Conseil Général de La Manche)</span></li>
-							<li class="mobHide">Animation de formations à la veille stratégique en organisme inter-entreprise (Les Rencontres d'Affaires)</li>
-							<li class="mobHide">Réalisation d'interventions « sur mesure » auprès d'établissements d'enseignement supérieur (Université Louis Lumière - Lyon, Université du Mirail - Toulouse, H.E.C Genève....)</li>
-							<li>Mise en place de partenariats <span class="mobHide">avec des établissements universitaires</span></li>
-						</ul>
+								<li>Développer une offre en conseil et formation</li>
+								<li>Réaliser l'ensemble du contenu pédagogique </li>
+								<li>Assurer les interventions auprès des clients</li>
+								<li class="mobHide">Etre à l'interface entre les clients et les équipes de développement</li>
+								<li class="miniHide">Développer des partenariats</li>
+							</ul>
+							<p class="resultats">Résultats / Réalisations : </p>
+							<ul class="miniPara">
+								<li>Offre complète de solutions en conseil et formation <span class="miniHide">(trames de projets, documents méthodologiques)</span></li>
+								<li>Conception et réalisation des modules de formation <span class="mobHide">(utilisation des logiciels édités, recherche structurée d'informations sur Internet, méthodologie de veille stratégique)</span></li>
+								<li class="mobHide">Réalisation d'un module de formation pour un cours annuel auprès des étudiants de l'Institut Européen de la Qualité Totale (I.E.Q.T.)</li>
+								<li>Traduction et animation d'une formation en anglais</li>
+								<li>Rédactions des guides utilisateurs et modules d'aide interactifs (web)</li>
+								<li class="mobHide">Réalisation d'une formation <span class="mobHide">à la veille concurrentielle sur Internet, et diffusion de cette formation dans le catalogue d'un organisme</span> inter-entreprise <span>(SERDA)</span> </li>
+								<li class="miniHide">Animation de formations <span class="mobHide"> à la veille stratégique,</span>en intra-entreprise <span class="mobHide">, auprès de clients institutionnels ou du secteur privé (Exemples : TOTAL, EDF, Ministère des affaires étrangères, Conseil Général de La Manche)</span></li>
+								<li class="mobHide">Animation de formations à la veille stratégique en organisme inter-entreprise (Les Rencontres d'Affaires)</li>
+								<li class="mobHide">Réalisation d'interventions « sur mesure » auprès d'établissements d'enseignement supérieur (Université Louis Lumière - Lyon, Université du Mirail - Toulouse, H.E.C Genève....)</li>
+								<li class="miniHide">Mise en place de partenariats <span class="mobHide">avec des établissements universitaires</span></li>
+							</ul>
 					</div>							
 				</div>
 				<div id="blockPedAdm">
 					<div id="expPedago">
-						<p class="xpTitle" id="xpTitlePedago"><span class="boldTitle"><span class="typeExp">PEDAGOGIE :</span> PROFESSEUR A DOMICILE (Progress Systeme - Cours à domicile  Grenoble / 2005 – 06 2007)</span></p>
-						<p class="xpTitleMob" id="xpTitlePedagoMob"><span class="boldTitle"><span class="typeExp">PEDAGOGIE :</span> PROFESSEUR A DOMICILE (Progress Systeme - Cours à domicile  Grenoble / 2005 – 06 2007)</span><span class="clicMob"> (Cliquez pour détailler)</span></p> <!-- VERSION MOBILE -->
+						<p class="xpTitle" id="xpTitlePedago"><span class="boldTitle"><span class="typeExp">PEDAGOGIE :</span> PROFESSEUR A DOMICILE <br>(Progress Systeme - Cours à domicile  Grenoble / 2005 – 06 2007)</span></p>
+						<p class="xpTitleMob" id="xpTitlePedagoMob"><span class="boldTitle"><span class="typeExp">PEDAGOGIE :</span> PROFESSEUR A DOMICILE (Progress Systeme - Cours à domicile  Grenoble / 2005 – 06 2007)</span><span class="clicMob"> (Cliquez pour détailler ou masquer)</span></p> <!-- VERSION MOBILE -->
 						<div id="paraXpPedago" class="paraXpPedagoMob">
 							<p class="missions">Missions : </p>
-							<div id="paraMissionsPedago"class="miniPara">
+							<div id="paraMissionsPedago" class="miniPara">
 								<ul>
-									<li>Assurer des cours particuliers et suivre la progression des élèves</li>
+									<li>Assurer des cours particuliers et suivre les progrès des élèves</li>
 								</ul>
 							</div>
 							<p class="resultats">Résultats : </p>
@@ -312,7 +307,7 @@
 					</div>									
 					<div id="expAdm">
 						<p class="xpTitle" id="xpTitleAdm"><span class="boldTitle"><span class="typeExp">RH - MANAGEMENT :</span> CHARGE DU RECRUTEMENT <br> (Fasiladom-Cours à domicile  Grenoble / 06 2007 – 10 2018)</span></p>
-						<p class="xpTitleMob" id="xpTitleAdmMob"><span class="boldTitle"><span class="typeExp">RH - MANAGEMENT :</span> CHARGE DU RECRUTEMENT (Fasiladom-Cours à domicile  Grenoble / 06 2007 – 10 2018)</span><span class="clicMob"> (Cliquez pour détailler)</span></p> <!-- VERSION MOBILE -->						
+						<p class="xpTitleMob" id="xpTitleAdmMob"><span class="boldTitle"><span class="typeExp">RH - MANAGEMENT :</span> CHARGE DU RECRUTEMENT (Fasiladom-Cours à domicile  Grenoble / 06 2007 – 10 2018)</span><span class="clicMob"> (Cliquez pour détailler ou masquer)</span></p> <!-- VERSION MOBILE -->						
 						<div id="paraXpAdm" class="paraXpAdmMob">
 							<p class="missions">Missions : </p>
 							<div id="paraMissionsAdm" class="miniPara"> 
@@ -332,7 +327,6 @@
 							</div>
 						</div>
 					</div>
-<!-- 					<p class="clicMob">Cliquez sur les titres pour détailler</p> -->
 				</div>
 			</section>
 		</div>
@@ -340,7 +334,7 @@
 
 	<!-- ***************************** SECTION FORMATION *************************** -->
 
-		<div class="section" class="pair" data-anchor="page4">
+		<div class="section" data-anchor="page4">
 <!-- 			<h2>FORMATION</h2> -->
 			<section id="training" class="sectionContent">
 				<p id="trainDisp">
@@ -348,23 +342,23 @@
 					<span class="boldTitle">2019 : CERTIFICAT – Langages informatiques option Développement JAVA-JEE</span><br>
 					Institut M2I Grenoble (n° 19090016)
 					<br>
-					<br>
+					<br class="hideMe">
 					<span class="boldTitle">2019 : CERTIFICAT - Developpement d'un site web avec HTML5 et CSS3</span><br>
 					Openclassrooms.com (n° 1522908545)
 					<br>
-					<br>
+					<br class="hideMe">
 					<span class="boldTitle">1997 : DESS (MASTER 2) Management  Systèmes d’Information et Organisation</span><br>
 					Institut d’Administration des Entreprises, Université Grenoble Alpes
 					<br>
-					<br>
+					<br class="hideMe">
 					<span class="boldTitle">1996 : Maîtrise des Sciences de Gestion</span><br>
 					Institut d’Administration des Entreprises, Université Grenoble Alpes
 					<br>
-					<br>
+					<br class="hideMe">
 					<span class="boldTitle">1994 : DEUG Economie - Gestion</span><br>
 					Université Grenoble Alpes
 					<br>
-					<br>
+					<br class="hideMe">
 					<span class="boldTitle">1992 : Baccalauréat C – Mathématiques et Sciences Physiques</span><br>
 					Lycée de VIZILLE (Isère)					
 				</p>
@@ -374,30 +368,30 @@
 	<!-- ***************************** SECTION CENTRES D'INTERET *************************** -->
 
 
-		<div class="section" class="impair" data-anchor="page5">
+		<div class="section" data-anchor="page5">
 <!-- 			<h2>CENTRES D'INTERET</h2> -->
 			<section id="other" class="sectionContent">
 				<div id="otherDisp">
 					<p>
 					Astronomie, astrophysique et exobiologie
 					<br>
-					<br>
-					<br>
+					<br class="hideMeLand">
+					<br class="hideMe">
 					Actualité scientifique, economique et politique
 					<br>
-					<br>
-					<br>
+					<br class="hideMeLand">
+					<br class="hideMe">
 					L'univers numérique et IT
 					<br>
-					<br>
-					<br>	
+					<br class="hideMeLand">
+					<br class="hideMe">	
 					Production musicale : Production de titres musicaux, diffusion via des plates-formes dédiées. <br class="brDispMob"><a href="http://soundcloud.com/equavox" target="_blank" id="scLink">Page Soundcloud</a>
 					<br>					
 					<span id="titresSC" class="italicPara">Quelques titres en écoute : </span> <br>
 					<span id="titreSCMob" class="italicPara">Exemple de titre en écoute</span> <br class="brDispMob">
 					<iframe id="track1" width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/279095282&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 					<br>
-					<br>
+					<br class="hideMe">
 					<iframe id="track2" width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258305348&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					</p>
@@ -408,7 +402,7 @@
 
 	<!-- ***************************** SECTION CONTACT *************************** -->
 
-		<div class="section" class="pair"  data-anchor="page6">
+		<div class="section" data-anchor="page6">
 <!-- 			<h2>CONTACT</h2> -->
 			<section id="contactMe" class="sectionContent">
 				<div id="coordBlock">
@@ -422,7 +416,7 @@
 					<p><a href="images/cvgn.pdf" target="_blank"><button type="button" class="btn btn-outline-info" id="learnDispSkills">Télecharger mon CV</button></a></p>
 				</div>
 				<div id="showMap">
-					<p class="mapLoc"><i class="fas fa-map-marked"></i> Localisation :</p>
+					<p class="mapLoc"><i class="fas fa-map-marked"></i> Localisation :</p>					
 					<div id="map">
 						<!-- Ici s'affiche la carte -->
 					</div>

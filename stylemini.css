@@ -42,10 +42,18 @@ a:hover
 
 }
 
+@media (orientation: landscape)
+{
+    #navbar
+    {
+        height: 40px;
+    }
+}
+
 #identity
 {
     padding-top: 1px;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-right: 5%;
     font-size: 1.5em;
 }
@@ -66,12 +74,6 @@ a:hover
     flex-direction: column;
 }
 
-#mobMenuButton
-{
-   /* height: 50px;*/
-   /* width: 120px;*/
-}
-
 #mobMenuButton img
 {
     float: right;
@@ -81,41 +83,61 @@ a:hover
 #mobMenuDisp
 {
     background-color: rgb(6,69,124);
-/*    padding: auto;*/
-    border: 1px solid grey;
-    vertical-align: center;
-    padding: 0;
 }
 
 #mobMenuDisp a
 {
     color: white;
-    vertical-align: middle;
-
+    text-align: center;
+    font-weight: bold;
 }
 
 #mobMenuDisp p
 {
     text-align: center;
-/*    padding: 0;
-    margin: 0;
-    text-align: center;*/
 }
 
 .mobMenuItem
 {
     
     border-bottom: 1px solid grey;
-    padding: 0;
-    margin: 0;
-    height: 30px;
-    width: 100px;
+    margin: 0; 
+    height: 45px;  
+    width: 110px; 
 }
 
-.mobMenuItemLast
+.mobMenuItem 
 {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.mobMenuItem p
+{
+    margin: auto;
+    text-align: center;
+}
+
+.mobMenuItem a
+{
+    margin: auto;
+    text-align: center;
+}
+
+
+@media (max-width: 360px) and (max-height: 600px) 
+{
+    #identity
+    {
+        margin-left: 1%;
+    }
+
+    .mobMenuItem
+    {        
+        height: 40px; 
+        width: 100px;
+    }
+
 }
 
 
@@ -139,7 +161,7 @@ a:hover
     width: auto;
 }
 
-#about, #skills, #career, #other, #contactMe
+#about, #skills, #career, #training, #other, #contactMe
 {
     width: 90%;
     height:90%;
@@ -147,7 +169,19 @@ a:hover
     background-color: rgb(225, 225, 234);
 }
 
-@media (min-width: 420px) and (max-width: 1425px)
+@media (min-width: 480px) and (max-width: 970px)
+{
+    #about, #skills, #career, #training, #other, #contactMe
+
+{
+    width: 95%;
+    height:90%;
+    padding: 0;
+}
+
+}
+
+/*@media (min-width: 420px) and (max-width: 1280px)
 {
     #about, #skills, #career, #other, #contactMe
         {
@@ -156,7 +190,19 @@ a:hover
         padding: 0;
         background-color: rgb(225, 225, 234);
         }
+}*/
+
+@media (orientation: landscape) 
+{
+     #about, #skills, #career, #training, #other, #contactMe
+    {
+        width: 95%;
+        height: 87%;
+        padding: 0;
+        background-color: rgb(225, 225, 234);
+    }   
 }
+
 
 .boldTitle
 {
@@ -174,7 +220,13 @@ a:hover
 .aPropos h2
 {
     text-align: center;
+    font-size: 1.3em;
 }
+
+.aPropos p
+    {
+        font-size: 1.2em;
+    }
 
 #about
 {
@@ -196,11 +248,70 @@ a:hover
     display: none;
 }
 
+@media (max-width: 500px) 
+{
+
+    .aPropos h2
+        {
+            font-size: 1.1em;
+        }
+    
+    .aPropos p
+        {
+            font-size: 0.7em;
+        }
+}
+
+
+
+/*@media (orientation: landscape)*/ @media (max-height: 525px)
+
+{
+    #about
+    {
+        display: flex;
+    }
+
+    .aPropos
+    {
+        margin-left: 10%;    
+    }
+
+    .aPropos p
+    {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 601px) 
+{
+    #about img
+    {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 601px) and (max-height: 360px)  and (orientation: landscape)
+{
+    #about img
+    {
+        width: 60%;
+        height: 30%;
+    }
+
+    .aPropos
+    {
+        margin-left: 4%;
+    }
+}
+
 
 /* **********SECTION COMPETENCES**********  */
 
 #skills
 {
+    margin-top: 0;
     background-image: url(images/competencesMob.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -224,12 +335,39 @@ a:hover
 
 .mobDevSkillDesc, .mobLearnSkillDesc, .mobEngSkillDesc, .mobWriteSkillDesc, .mobMngmtSkillDesc
 {
-
     background-color: rgb(204,204,255);
     border-radius: 10px;
     padding: 5px;
     width: auto;
 }
+
+button
+{
+    margin-top: 2%;
+}
+
+/*@media (orientation: landscape)*/ @media (max-height: 480px)
+{
+
+    .miniCompetences
+    {
+        padding-left: 1%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobDevSkillDesc, .mobLearnSkillDesc, .mobEngSkillDesc, .mobWriteSkillDesc, .mobMngmtSkillDesc
+{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    border-radius: 10px;
+    padding: 5px;
+    width: auto;
+}
+}
+
+
 
 
 /* **********SECTION EXPERIENCES**********   */
@@ -247,6 +385,11 @@ ul {
     padding-left:0;
 }
 
+.xpTitleMob
+{
+    cursor: pointer;
+}
+
 .typeExp
 {
     color: rgb(255, 102, 0);
@@ -255,6 +398,18 @@ ul {
 .mobHide
 {
     display: none;
+}
+
+.missions
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.resultats
+{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #dispMissionsIT, #dispMissionsPedago, #dispMissionsAdm
@@ -267,10 +422,11 @@ ul {
     cursor: pointer;
 }
 
-#paraXpIT
+
+/*#paraXpIT
 {
     display: none;
-}
+}*/
 
 #paraXpPedago
 {
@@ -282,20 +438,20 @@ ul {
     display: none;
 }
 
-#paraXpITMob
+/*.paraXpITMob
+{
+    display: none;
+}*/
+
+.paraXpPedagoMob
 {
     display: none;
 }
 
-#paraXpPedagoMob
+.paraXpAdmMob
 {
     display: none;
-}
-
-#paraXpAdmMob
-{
-    display: none;
-}
+} 
 
 .clicMob
 {
@@ -303,30 +459,97 @@ ul {
     font-style: italic;
 }
 
+/*#xpTitleITMob
+{
+    background-color: rgb(128, 179, 255);
+}*/
+
+
+@media (max-height: 480px)
+{
+    .missions
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .resultats
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .xpTitleMob
+    {
+        margin-top: 1%;
+        margin-bottom: 0;
+        width: 48%;
+        height: 100%;
+    }
+
+    #expIT, #expPedago, #expAdm
+    {
+        display: flex;
+/*        height: 100px;*/
+    } 
+
+    #blockPedAmd
+    {
+        position: absolute;
+        top: 10px;
+        /*margin-top: 0;*/
+    }
+
+    .paraXpITMob, .paraXpPedagoMob, .paraXpAdmMob
+    {
+        position: absolute;
+        top: 5%;
+       /* margin-top: 0;*/
+        margin-left: 46%;
+        padding-top: 1%;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 360px) and (max-height: 600px)
+{
+    .miniHide
+    {
+        display: none;
+    }
+
+    #career p
+    {
+        font-size: 0.8em;
+    }
+
+    #career li
+    {
+        font-size: 0.9em;
+    }
+
+    .xpTitleMob
+    {
+        margin-bottom: 1%;
+    }
+
+    .paraXpITMob
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
 
 /* **********SECTION FORMATION**********   */
 
 #training
 {
-    width: 90%;
-    height: 90%;
-    background-color: rgb(225, 225, 234);
-    border: 1px solid rgb(225, 225, 234);
     background-image: url(images/formationMob.png);
     background-repeat: no-repeat;
     background-position: bottom right;
 }
 
-@media (min-width: 400px) and (max-width: 1425px)
-{
-    #training
-    {
-        width: 95%;
-        height: 90%;
-        background-color: rgb(225, 225, 234);
-        border: 1px solid rgb(225, 225, 234);
-    }
-}
 
 #trainDisp
 {
@@ -335,7 +558,38 @@ ul {
 }
 
 
+/*@media (orientation: landscape)*/ @media (max-height: 480px)
+{
+    #trainDisp .hideMe
+    {
+        display: none;
+    }
+}
+
 /* ************SECTION CENTRES D'INTERET********** */
+
+/*@media (orientation: landscape)*/ @media (max-height: 480px)
+{
+    .hideMeLand 
+    {
+        display: none;
+    }
+
+    #otherDisp .hideMe
+    {
+        display: none;
+    }
+    
+/*    #titreSCMob
+    {
+        display: none;
+    }*/
+
+/*    iframe
+    {
+        display: none;
+    }*/
+}
 
 #other
 {
@@ -388,44 +642,110 @@ ul {
     background-position: bottom right;
     padding-top: 1%;
     padding-left: 1%;
-
 }
-
-.contactBlock
-{
-    display: flex;
-}
-
-.numTel .adrDesc .mailDesc .mapDesc
-{
-    padding-top: 10px;
-    height: 80px;
-    background-color: rgb(255, 230, 255);
-}   
 
 .cLink
 {
     color: rgb(255, 102, 0);
 }
 
+.mapLoc
+{
+    margin-bottom: 0;
+}
+
 #showMap
 {
-    margin-top: 10%;
-    padding-left: 1%;
+    width: 75%;
+    height: 50%;
 }
 
 #map
 {
-    margin-top : 50 px;
-    height:220px;
-    width: 220px;
+    margin-top: 0;
+    padding-top: 0;
+    height: 85%;
+    width: 100%;
 }
 
-@media (min-width: 400px) and (max-width: 1425px)
+
+@media (orientation: landscape) 
+{
+
+    #contactMe
+    {
+        display: flex;
+        padding-top: 1%;
+    }
+
+    #coordBlock
+    {
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    #showMap
+    {
+        width: 40%;
+        height: 75%;
+    }
+
+    #map
+    {
+        height:85%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 600px) 
+{
+
+    #coordBlock
+    {
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-left: 2%;
+    }
+
+     #showMap
+    {
+        width: 70%;
+        height: 45%;
+        margin-right: 20%;
+    }
+
+}
+
+
+
+
+/*.contactBlock
+{
+    display: flex;
+}*/
+
+/*.numTel .adrDesc .mailDesc .mapDesc
+{
+    padding-top: 10px;
+    height: 80px;
+    background-color: rgb(255, 230, 255);
+
+}   */
+
+
+/*#map
+{
+
+    height:220px;
+    width: 220px;
+}*/
+
+/*@media (min-width: 400px) and (max-width: 1280px)
 {
     #map
     {
-        height:400px;
-        width: 400px;
+        height:220px;
+        width: 220px;
+        border: 1px solid black;
     }
-}
+}*/

@@ -126,10 +126,29 @@ p:hover
     display: none;
 }    
 
+@media (min-width: 1280px) and (max-width: 1450px)
+{
+
+#navbar {
+width: 100%;
+height: 50px;
+position: absolute;
+z-index: 999;
+display: flex;
+background-color: rgb(102,102,102);
+opacity: 0.9;
+padding-left: 15%;
+padding-right: 10%;
+}
+
+
+
+
+}
 
 /* **********PROPRIETES COMMUNES A CHAQUE SECTION********** */
 
-#about, #skills, #career, #other, #contactMe
+#about, #skills, #career, #training, #other, #contactMe
 {
     width: 98%;
     height:85%;
@@ -158,12 +177,7 @@ p:hover
 {
     color: black; 
     margin-bottom: 0;
-    font-size: 1.2em;
-}
-
-.miniPara
-{
-    font-size: 1em;
+/*    font-size: 1.2em;*/
 }
 
 .italicPara
@@ -191,10 +205,33 @@ p:hover
 
 .aPropos
 {
+    font-size: 1.4em;
     width:40%;
     margin-top: 10%;
     margin-left: 2%;
 }
+
+@media (min-width: 1281px) and (max-width: 1600px) 
+
+{
+
+   .contentTitle
+{
+       width: 25%;
+       text-align: center;
+       margin-top: 2%;
+       margin-left: 5%;
+}
+
+    .aPropos
+{
+        width:60%;
+        margin-top: 2%;
+        margin-left: 2%;
+}
+
+}
+
 
 
 /* **********SECTION COMPETENCES********** */
@@ -235,11 +272,28 @@ p:hover
 
 .devSkillDesc, .learnSkillDesc, .engSkillDesc, .writeSkillDesc, .mngmtSkillDesc
 {
-
+    font-size: 1.2em;
     background-color: rgb(204,204,255);
+/*    opacity: 0.8;*/
     border-radius: 10px;
     padding: 5px;
     width: 80%;
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) 
+{
+    .devSkillDesc, .learnSkillDesc, .engSkillDesc, .writeSkillDesc, .mngmtSkillDesc
+    {
+            font-size: 1em;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1399px)
+{
+    .devSkillDesc, .learnSkillDesc, .engSkillDesc, .writeSkillDesc, .mngmtSkillDesc
+    {
+            font-size: 0.8em;
+    }
 }
 
 #skills
@@ -264,16 +318,132 @@ p:hover
     background-position: bottom right;
 }
 
+.xpTitle
+{
+    font-size: 1.2em;
+}
+
+.missions, .resultats
+{
+    font-size: 1.2em;
+}
+
+.miniPara
+{
+    font-size: 1.1em;
+}
+
+@media (min-width: 1367px) and (max-width: 1600px) 
+{
+    .xpTitle
+    {
+        font-size: 1em;
+    }
+
+    .missions, .resultats
+    {
+        font-size: 1em;
+    }
+
+    .miniPara
+    {
+        font-size: 0.9em;
+    }
+
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) 
+{
+    .xpTitle
+    {
+        font-size: 0.9em;
+    }
+
+    .missions, .resultats
+    {
+        font-size: 0.9em;
+    }
+
+    .miniPara
+    {
+        font-size: 0.7em;
+    }
+
+}
+
+
+
+
 #expIT
 {
     width: 50%;
-    height: 80%;
-    margin-top: 25px;
-    margin-left: 20px;
+    height: 88%;
+    margin-top: 0.2%;
+    margin-left: 3%;
     margin-right: 10px;
     background-color: rgb(204,204,255);
+/*    opacity: 0.8;*/
     border-radius: 10px;
     padding: 5px;     
+}
+
+#blockPedAdm
+{
+    margin-top: 0.2%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#expPedago
+{
+    background-color: rgb(204,204,255);
+/*    opacity: 0.8;*/
+    border-radius: 10px;
+    padding: 5px;
+/*    margin-top: 25px;*/
+    width:80%;
+
+}
+
+#expAdm
+{  
+    background-color: rgb(204,204,255);
+/*    opacity: 0.8;*/
+    border-radius: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 55%;
+/*    margin-top: 10px;*/
+}
+
+@media (min-width: 1281px) and (max-width: 1750px)
+{
+
+#expIT
+{
+    width: 100%;
+    height: 84%;
+    margin-top: 0.2%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(204,204,255);
+    border-radius: 10px;
+    padding: 5px; 
+}
+
+#blockPedAdm
+{
+    width: 52%;
+    padding-right: 1%;
+
+    margin-top: 0.2%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #expPedago
@@ -281,8 +451,9 @@ p:hover
     background-color: rgb(204,204,255);
     border-radius: 10px;
     padding: 5px;
-    margin-top: 25px;
-    width:80%;
+/*    margin-top: 25px;*/
+    width:100%;
+    margin-right: 1%;
 
 }
 
@@ -291,10 +462,16 @@ p:hover
     background-color: rgb(204,204,255);
     border-radius: 10px;
     padding: 5px;
-    width: 60%;
-    height: 40%;
-    margin-top: 10px;
+    width: 100%;
+    height: 50%;
+/*    margin-top: 10px;*/
+    margin-right: 1%;
 }
+
+
+}
+
+
 
 .typeExp
 {
@@ -331,29 +508,72 @@ p:hover
 
 #training
 {
-    width: 98%;
+/*    width: 98%;
     height:85%;
-    background-color: rgb(225, 225, 234);
+    background-color: rgb(225, 225, 234);*/
     background-image: url(images/formation.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    border: 1px solid rgb(225, 225, 234);
+/*    border: 1px solid rgb(225, 225, 234);*/
 }
 
 #trainDisp
 {
+    font-size: 1.2em;
     margin-left: 10%; 
     margin-top: 5%;
 }
+
+/*@media (min-width: 1281px) and (max-width: 1600px)
+{
+    #trainDisp
+    {
+        font-size: 1em;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+}*/
 
 
 /* ************SECTION CENTRES D'INTERET********** */
 
 #otherDisp
 {
-    margin-left: 10%; 
-    margin-top: 5%;    
+    margin-left: 8%; 
+    margin-top: 5%;  
 }
+
+#otherDisp p
+{
+    font-size: 1.2em;
+}
+
+
+@media (min-width: 1281px) and (max-width: 1600px)
+{
+    #otherDisp
+    {
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    #otherDisp p
+    {
+        font-size: 1em;
+    }
+
+    iframe
+    {
+        width: 90%;
+    }
+
+    .hideMe
+    {
+        display: none;
+    }
+}
+
+
 
 .brDispMob
 {
@@ -398,6 +618,11 @@ p:hover
     margin-left: 10%;   
 }
 
+#coordBlock p
+{
+    font-size: 1.2em;
+}
+
 .numTel .adrDesc .mailDesc .mapDesc
 {
     padding-top: 20px;
@@ -414,13 +639,15 @@ p:hover
 {
     margin-top: 5%;
     margin-left: 9%;
+    width: 30%;
+    height: 60%;
 }
 
 #map
 {
-    margin-top : 50 px;
-    height:500px;
-    width:500px;
+
+    height:100%;
+    width: 100%;
     border: 1px solid black;
 }
 

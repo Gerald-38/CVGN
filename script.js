@@ -344,13 +344,12 @@ else if ( $(".mobMngmtSkillDesc" ).is(":hidden")) {
 
 // ***** Expérience IT *****
 
+
 $("#xpTitleITMob").click(function() {
-	
-	// if ($(".clicMob").is(":visible")) {
-	// 	$(".clicMob").hide();
-	// }
-	// else
-	// 	$(".clicMob").show();
+
+	// $(this).css("background-color", "rgb(128, 179, 255)");
+	// $("#xpTitlePedagoMob").css("background-color", "rgb(204,204,255");
+	// $("#xpTitleAdmMob").css("background-color", "rgb(204,204,255");
 
 	if ($( ".paraXpPedagoMob" ).is(":visible")) {
 		$(".paraXpPedagoMob").hide();
@@ -374,9 +373,10 @@ $("#xpTitleITMob").click(function() {
 
 $("#xpTitlePedagoMob").click(function() {
 
-	// if ($(".clicMob").is(":hidden")) {
-	// 	$(".clicMob").show();
-	// }
+	// $(this).css("background-color", "rgb(128, 179, 255)");
+	// $("#xpTitleITMob").css("background-color", "rgb(204,204,255");
+	// $("#xpTitleAdmMob").css("background-color", "rgb(204,204,255");
+
 
 	if ($( ".paraXpITMob" ).is(":visible")) {
 		$(".paraXpITMob").hide();
@@ -399,9 +399,9 @@ $("#xpTitlePedagoMob").click(function() {
 
 $("#xpTitleAdmMob").click(function() {
 
-	// if ($(".clicMob").is(":hidden")) {
-	// 	$(".clicMob").show();
-	// }
+	// $(this).css("background-color", "rgb(128, 179, 255)");
+	// $("#xpTitleITMob").css("background-color", "rgb(204,204,255");
+	// $("#xpTitlePedagoMob").css("background-color", "rgb(204,204,255");
 
 	if ($( ".paraXpITMob" ).is(":visible")) {
 		$(".paraXpITMob").hide();
