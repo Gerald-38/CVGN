@@ -419,7 +419,7 @@ $("#xpTitleAdmMob").click(function() {
 });
 
 
-// UTILISATION DE L'API OPENSTREETMAP 
+// INTEGRATION DE L'API OPENSTREETMAP 
 
 	var lat = 45.111510;
 	var lon = 5.754132;
